@@ -94,6 +94,15 @@ img{
 background-color: var(--color-black);
 color: var(--color-white);
 }
+.btn_primary{
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+.btn_primary:hover{
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
 .btn_secondary{
     display: inline-block;
     background-color: var(--color-black);
@@ -128,6 +137,7 @@ nav{
 /*header*/
 header{
   padding-top: 1rem;
+  margin-bottom: 3rem;
 }
 .header_container{
  display: grid;
@@ -183,4 +193,9 @@ header{
 }
 .description_recommandation .btn{
   width: fit-content;
+}
+/*intro section*/
+.intro{
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
