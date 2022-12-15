@@ -93,6 +93,7 @@ img{
 .btn:hover{
 background-color: var(--color-black);
 color: var(--color-white);
+cursor: pointer;
 }
 .btn_primary{
   color: var(--color-white);
@@ -151,18 +152,36 @@ header{
   align-items: center;
   justify-content: space-evenly;
 }
-.header_right ul{
+.acces{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.acces a{
+  color: var(--color-white);
+}
+
+.acces ul{
   display: flex;
   gap: 1rem;
 }
-.header_right i{
+.acces i{
   display: block;
+  color: var(--color-white);
 }
-.header_right li{
+.acces li{
   width: 9rem;
-  border: 1px black solid;
+  border: 1px var(--color-white) solid;
   border-radius: 50%;
   padding: 2.5rem 1rem 2.5rem;
+}
+.acces li:hover, .acces li:hover a, .acces li:hover i{
+  background-color: var(--color-white);
+  color: var(--color-black);
+
 }
 .acces h2{
   margin-bottom: 2rem;
