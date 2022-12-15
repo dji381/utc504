@@ -93,6 +93,16 @@ img{
 .btn:hover{
 background-color: var(--color-black);
 color: var(--color-white);
+cursor: pointer;
+}
+.btn_primary{
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+.btn_primary:hover{
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
 }
 .btn_secondary{
     display: inline-block;
@@ -128,6 +138,7 @@ nav{
 /*header*/
 header{
   padding-top: 1rem;
+  margin-bottom: 3rem;
 }
 .header_container{
  display: grid;
@@ -141,18 +152,36 @@ header{
   align-items: center;
   justify-content: space-evenly;
 }
-.header_right ul{
+.acces{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.acces a{
+  color: var(--color-white);
+}
+
+.acces ul{
   display: flex;
   gap: 1rem;
 }
-.header_right i{
+.acces i{
   display: block;
+  color: var(--color-white);
 }
-.header_right li{
+.acces li{
   width: 9rem;
-  border: 1px black solid;
+  border: 1px var(--color-white) solid;
   border-radius: 50%;
   padding: 2.5rem 1rem 2.5rem;
+}
+.acces li:hover, .acces li:hover a, .acces li:hover i{
+  background-color: var(--color-white);
+  color: var(--color-black);
+
 }
 .acces h2{
   margin-bottom: 2rem;
@@ -183,4 +212,9 @@ header{
 }
 .description_recommandation .btn{
   width: fit-content;
+}
+/*intro section*/
+.intro{
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
